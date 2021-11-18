@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- === Header Starts === -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>GenDA</title>
+
+  <link href="./assets/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/font.css" rel="stylesheet" type="text/css">
+  <link href="./assets/style.css" rel="stylesheet" type="text/css">
+</head>
+<!-- === Header Ends === -->
+
+
+<body>
+
+
+<!-- === Home Section Starts === -->
+<div class="section">
+  <!-- === Title Starts === -->
+  <div class="header">
+    <div class="logo">
+      <a href="https://genforce.github.io/" target="_blank"><img src="./assets/genforce.png"></a>
+    </div>
+    <div class="title", style="padding-top: 25pt;">  <!-- Set padding as 10 if title is with two lines. -->
+      One-Shot Generative Domain Adaptation
+    </div>
+  </div>
+  <!-- === Title Ends === -->
+  <div class="author">
+    <a href="http://ceyuan.me/" target="_blank">Ceyuan Yang</a><sup>1,*</sup>,&nbsp;
+    <a href="http://shenyujun.github.io/" target="_blank">Yujun Shen</a><sup>2,*</sup>,&nbsp;
+    <a href="" target="_blank">Zhiyi Zhang</a><sup>2</sup>,&nbsp;
+    <a href="https://justimyhxu.github.io/academic.html" target="_blank">Yinghao Xu</a><sup>1</sup>,&nbsp;
+    <br>
+    <a href="" target="_blank">Jiapeng Zhu</a><sup>3</sup>,&nbsp;
+    <a href="" target="_blank">Zhirong Wu</a><sup>4</sup>,&nbsp;
+    <a href="http://bzhou.ie.cuhk.edu.hk" target="_blank">Bolei Zhou</a><sup>1</sup>
+  </div>
+  <div class="institution">
+    <sup>1</sup> The Chinese University of Hong Kong,
+    <sup>2</sup> ByteDance Inc. <br>
+    <sup>3</sup> Hong Kong University of Science and Technology,
+    <sup>4</sup> Microsoft Research Asia <br>
+  </div>
+  <div class="link">
+    <a href="" target="_blank">[Paper]</a>&nbsp;
+    <a href="https://github.com/genforce/genda" target="_blank">[Code]</a>
+  </div>
+  <div class="teaser">
+    <img src="./assets/teaser.png">
+  </div>
+</div>
+<!-- === Home Section Ends === -->
+
+
+<!-- === Overview Section Starts === -->
+<div class="section">
+  <div class="title">Overview</div>
+  <div class="body">
+    This work aims at transferring a Generative Adversarial Network (GAN) pre-trained on one image domain to a new domain referring to as few as just one target image. Different from existing approaches that adopt the vanilla fine-tuning strategy, we import two lightweight modules called attribute adaptor and attribute classifier  to the generator and the discriminator respectively. By efficiently learning these two modules, we manage to reuse the prior knowledge and hence enable one-shot transfer with impressively high diversity.  Our method demonstrates substantial improvements over existing baselines in a wide range of settings.
+  </div>
+</div>
+<!-- === Overview Section Ends === -->
+
+
+<!-- === Result Section Starts === -->
+<div class="section">
+  <div class="title">Results</div>
+  <div class="body">
+    Here we provide some synthesis after one-shot adaptation.
+
+    <!-- Adjust the number of rows and columns (EVERY project differs). -->
+    <table width="100%" style="margin: 20pt 0; text-align: center;">
+      <tr>
+        <td><img src="./assets/1shotadaptation.png" width="95%"></td>
+      </tr>
+    </table>
+
+    <table width="100%" style="margin: 20pt 0; text-align: center;">
+      <tr>
+        <td><img src="./assets/outofdomain.png" width="95%"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- === Result Section Ends === -->
+
+
+<!-- === Reference Section Starts === -->
+<div class="section">
+  <div class="bibtex">BibTeX</div>
+<pre>
+@article{yang2021genda,
+  title   = {One-Shot Generative Domain Adaptation},
+  author  = {Yang, Ceyuan and Shen, Yujun and Zhang, Zhiyi and Xu, Yinghao and Zhu, Jiapeng and Wu, Zhirong and Zhou, Bolei},
+  article = {arXiv preprint},
+  year    = {2021}
+}
+</pre>
+
+  <!-- BZ: we should give other related work enough credits, -->
+  <!--     so please include some most relevant work and leave some comment to summarize work and the difference. -->
+  <div class="ref">Related Work</div>
+  <div class="citation">
+    <div class="image"><img src="./assets/freezed.png"></div>
+    <div class="comment">
+      <a href="https://arxiv.org/pdf/2002.10964.pdf" target="_blank">
+        S. Mo, M. Cho, and J. Shin.
+        FreezeD: a Simple Baseline for Fine-tuning GANs.
+        CVPR AI for Content Creation Workshop, 2020.</a><br>
+      <b>Comment:</b>
+      Proposes to freeze the lower layers of the discriminator for generative domain adaptation.
+    </div>
+  </div>
+
+  <div class="citation">
+    <div class="image"><img src="./assets/cross-domain.png"></div>
+    <div class="comment">
+      <a href="https://arxiv.org/pdf/2104.06820.pdf" target="_blank">
+        U. Ojha, Y. Li, J. Lu, AA. Efros, YJ. Lee, E. Shechtman, and R. Zhang.
+        Few-shot Image Generation via Cross-domain Correspondence
+        CVPR, 2021.</a><br>
+      <b>Comment:</b>
+      Proposed the cross-domain consistency as a regularization to maintain the diversity.
+    </div>
+  </div>
+
+
+</div>
+<!-- === Reference Section Ends === -->
+
+
+</body>
+</html>
