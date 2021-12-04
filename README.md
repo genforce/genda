@@ -4,7 +4,7 @@
 
 > **One-Shot Generative Domain Adaptation** <br>
 > Ceyuan Yang*, Yujun Shen*, Zhiyi Zhang, Yinghao Xu, Jiapeng Zhu, Zhirong Wu, Bolei Zhou <br>
-> *arXiv preprint*
+> *arXiv preprint arXiv:2111.09876*
 
 [[Paper](https://arxiv.org/pdf/2111.09876.pdf)]
 [[Project Page](https://genforce.github.io/genda/)]
